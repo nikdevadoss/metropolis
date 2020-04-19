@@ -1,0 +1,6 @@
+framework module Pods_Metropolis {
+  umbrella header "Pods-Metropolis-umbrella.h"
+
+  export *
+  module * { export * }
+}

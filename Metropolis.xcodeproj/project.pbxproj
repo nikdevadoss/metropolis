@@ -3,27 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6194C2B9A0DE12CE295E9528 /* Pods_Metropolis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D48C74D971C72712D70FFF1 /* Pods_Metropolis.framework */; };
 		CF893332244D0189002A2D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF893331244D0189002A2D06 /* AppDelegate.swift */; };
 		CF893334244D0189002A2D06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF893333244D0189002A2D06 /* SceneDelegate.swift */; };
-		CF893336244D0189002A2D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF893335244D0189002A2D06 /* ViewController.swift */; };
 		CF893339244D0189002A2D06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF893337244D0189002A2D06 /* Main.storyboard */; };
 		CF89333B244D0190002A2D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF89333A244D0190002A2D06 /* Assets.xcassets */; };
 		CF89333E244D0191002A2D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF89333C244D0191002A2D06 /* LaunchScreen.storyboard */; };
+		CF893347244D0B1B002A2D06 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF893346244D0B1B002A2D06 /* loginViewController.swift */; };
+		CF89334A244D0D5C002A2D06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF893349244D0D5C002A2D06 /* GoogleService-Info.plist */; };
+		CF978EFA244D10B00023383A /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF978EF9244D10B00023383A /* registerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BE4B9636BD960ECE9B0D0E8 /* Pods-Metropolis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metropolis.release.xcconfig"; path = "Target Support Files/Pods-Metropolis/Pods-Metropolis.release.xcconfig"; sourceTree = "<group>"; };
+		9D48C74D971C72712D70FFF1 /* Pods_Metropolis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metropolis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A3F4CF380C1AF08C148939 /* Pods-Metropolis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metropolis.debug.xcconfig"; path = "Target Support Files/Pods-Metropolis/Pods-Metropolis.debug.xcconfig"; sourceTree = "<group>"; };
 		CF89332E244D0189002A2D06 /* Metropolis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metropolis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF893331244D0189002A2D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF893333244D0189002A2D06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF893335244D0189002A2D06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF893338244D0189002A2D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF89333A244D0190002A2D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF89333D244D0191002A2D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF89333F244D0191002A2D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF893346244D0B1B002A2D06 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		CF893349244D0D5C002A2D06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF978EF9244D10B00023383A /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6194C2B9A0DE12CE295E9528 /* Pods_Metropolis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		166A77E8732DE49EB831C7EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D48C74D971C72712D70FFF1 /* Pods_Metropolis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A814C6E4B97268885BE18B2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8A3F4CF380C1AF08C148939 /* Pods-Metropolis.debug.xcconfig */,
+				6BE4B9636BD960ECE9B0D0E8 /* Pods-Metropolis.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF893325244D0189002A2D06 = {
 			isa = PBXGroup;
 			children = (
 				CF893330244D0189002A2D06 /* Metropolis */,
 				CF89332F244D0189002A2D06 /* Products */,
+				A814C6E4B97268885BE18B2F /* Pods */,
+				166A77E8732DE49EB831C7EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +86,23 @@
 			children = (
 				CF893331244D0189002A2D06 /* AppDelegate.swift */,
 				CF893333244D0189002A2D06 /* SceneDelegate.swift */,
-				CF893335244D0189002A2D06 /* ViewController.swift */,
+				CF893345244D0A5D002A2D06 /* View Controllers */,
 				CF893337244D0189002A2D06 /* Main.storyboard */,
 				CF89333A244D0190002A2D06 /* Assets.xcassets */,
 				CF89333C244D0191002A2D06 /* LaunchScreen.storyboard */,
 				CF89333F244D0191002A2D06 /* Info.plist */,
+				CF893349244D0D5C002A2D06 /* GoogleService-Info.plist */,
 			);
 			path = Metropolis;
+			sourceTree = "<group>";
+		};
+		CF893345244D0A5D002A2D06 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF893346244D0B1B002A2D06 /* loginViewController.swift */,
+				CF978EF9244D10B00023383A /* registerViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF893342244D0191002A2D06 /* Build configuration list for PBXNativeTarget "Metropolis" */;
 			buildPhases = (
+				C206232866E1E14192B76623 /* [CP] Check Pods Manifest.lock */,
 				CF89332A244D0189002A2D06 /* Sources */,
 				CF89332B244D0189002A2D06 /* Frameworks */,
 				CF89332C244D0189002A2D06 /* Resources */,
+				3E5A9AEA27E09C39ABDF08B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF89333E244D0191002A2D06 /* LaunchScreen.storyboard in Resources */,
+				CF89334A244D0D5C002A2D06 /* GoogleService-Info.plist in Resources */,
 				CF89333B244D0190002A2D06 /* Assets.xcassets in Resources */,
 				CF893339244D0189002A2D06 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +174,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E5A9AEA27E09C39ABDF08B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Metropolis/Pods-Metropolis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Metropolis/Pods-Metropolis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Metropolis/Pods-Metropolis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C206232866E1E14192B76623 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Metropolis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF89332A244D0189002A2D06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF893336244D0189002A2D06 /* ViewController.swift in Sources */,
 				CF893332244D0189002A2D06 /* AppDelegate.swift in Sources */,
 				CF893334244D0189002A2D06 /* SceneDelegate.swift in Sources */,
+				CF893347244D0B1B002A2D06 /* loginViewController.swift in Sources */,
+				CF978EFA244D10B00023383A /* registerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +366,7 @@
 		};
 		CF893343244D0191002A2D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A3F4CF380C1AF08C148939 /* Pods-Metropolis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		CF893344244D0191002A2D06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE4B9636BD960ECE9B0D0E8 /* Pods-Metropolis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
