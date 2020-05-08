@@ -31,20 +31,37 @@ class registerViewController: UIViewController {
     }
     */
     @IBAction func registerPressed(_ sender: Any) {
-        let db = Firebase.Firestore.firestore()
-        
-        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-            if(error == nil){
-                print("User created successfully!")
-                self.performSegue(withIdentifier: "toLogin", sender: self)
-            }
-            else{
-                let myAlert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert) //you can change message to whatever you want.
-                let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-                myAlert.addAction(okAction)
-                self.present(myAlert, animated: true, completion: nil)
+        //let db = Firebase.Firestore.firestore()
+        let email = emailTextField.text!
+        if(!isValidEmail(email)){
+            let error = "Email is not valid, requires .edu domain"
+            let myAlert = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+        }
+        else{
+            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+                if(error == nil){
+                    print("User created successfully!")
+                    self.performSegue(withIdentifier: "toLandingPage", sender: self)
+                }
+                else{
+                    let myAlert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    myAlert.addAction(okAction)
+                    self.present(myAlert, animated: true, completion: nil)
+                }
             }
         }
+    }
+    
+    
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.edu"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
     }
     
 }

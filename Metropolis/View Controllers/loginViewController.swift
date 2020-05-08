@@ -33,6 +33,7 @@ class loginViewController: UIViewController {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             if(error == nil){
                 print("User signed in successfully!")
+                self.performSegue(withIdentifier: "toLandingPage", sender: self)
             }
             else{
                 let myAlert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert) //you can change message to whatever you want.
