@@ -12,5 +12,6 @@ target 'Metropolis' do
 	pod 'Firebase/Functions'
 	pod 'Firebase/Messaging'
 	pod 'Firebase/Storage'
+	pod 'Firebase/Database'
 
 end

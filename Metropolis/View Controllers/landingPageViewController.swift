@@ -11,17 +11,31 @@ import Firebase
 
 class landingPageViewController: UIViewController {
 
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.tabBarController?.tabBar.isHidden = true
+        registerButton.layer.cornerRadius = 10
+        registerButton.layer.borderWidth = 0.5
+        registerButton.layer.borderColor = UIColor.white.cgColor
+        loginButton.layer.cornerRadius = 10
+        loginButton.layer.borderWidth = 0.5
+        loginButton.layer.borderColor = UIColor.white.cgColor
+        
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidLoad()
         if(Auth.auth().currentUser != nil){
             self.performSegue(withIdentifier: "toTabBar", sender: self)
         }
+        //self.tabBar.isHidden = true
+        
     }
+ 
 
     /*
     // MARK: - Navigation

@@ -7,13 +7,33 @@
 //
 
 import UIKit
+import Firebase
 
 class profileViewController: UIViewController {
 
+    @IBOutlet weak var profilePicture: UIImageView!
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //let db = Firebase.Firestore.firestore()
+        //usernameLabel.text = (db.collection("Users").document(Auth.auth().currentUser!.uid).value(forKey: "username") as! String)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        let db = Firebase.Firestore.firestore()
+        db.collection("Users").document(Auth.auth().currentUser!.uid).getDocument { (document, error) in
+            //document?.get("username")
+            self.usernameLabel.text = document?.get("username") as? String
+            self.emailLabel.text = document?.get("email") as? String
+        }    
     }
     
 
@@ -26,5 +46,18 @@ class profileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func logoutPressed(_ sender: Any) {
+        var success = false
+        do{
+            try Auth.auth().signOut()
+            success = true
+        }
+        catch{
+            
+        }
+        if(success){
+            self.performSegue(withIdentifier: "toLandingPage", sender: self)
+        }
+    }
+    
 }

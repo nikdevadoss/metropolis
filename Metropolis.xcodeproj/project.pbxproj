@@ -10,9 +10,6 @@
 		6194C2B9A0DE12CE295E9528 /* Pods_Metropolis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D48C74D971C72712D70FFF1 /* Pods_Metropolis.framework */; };
 		CF2AF0AF2465FF1400E5D378 /* landingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2AF0AE2465FF1400E5D378 /* landingPageViewController.swift */; };
 		CF2AF0B324660E6100E5D378 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2AF0B224660E6100E5D378 /* profileViewController.swift */; };
-		CF2AF0B524660E7000E5D378 /* messagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2AF0B424660E7000E5D378 /* messagesViewController.swift */; };
-		CF2AF0B724660E7B00E5D378 /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2AF0B624660E7B00E5D378 /* feedViewController.swift */; };
-		CF2AF0B924660E8700E5D378 /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2AF0B824660E8700E5D378 /* eventsViewController.swift */; };
 		CF893332244D0189002A2D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF893331244D0189002A2D06 /* AppDelegate.swift */; };
 		CF893334244D0189002A2D06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF893333244D0189002A2D06 /* SceneDelegate.swift */; };
 		CF893339244D0189002A2D06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF893337244D0189002A2D06 /* Main.storyboard */; };
@@ -21,6 +18,11 @@
 		CF893347244D0B1B002A2D06 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF893346244D0B1B002A2D06 /* loginViewController.swift */; };
 		CF89334A244D0D5C002A2D06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF893349244D0D5C002A2D06 /* GoogleService-Info.plist */; };
 		CF978EFA244D10B00023383A /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF978EF9244D10B00023383A /* registerViewController.swift */; };
+		CF9E4CAE2491B9D0002BA96F /* Screen Shot 2020-06-10 at 6.00.14 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = CF9E4CAD2491B9D0002BA96F /* Screen Shot 2020-06-10 at 6.00.14 PM.png */; };
+		CFA21FE924A15CA40082E82E /* feedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA21FE824A15CA40082E82E /* feedTableViewController.swift */; };
+		CFA21FEB24A15E2A0082E82E /* eventManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA21FEA24A15E2A0082E82E /* eventManagerViewController.swift */; };
+		CFA7C2532490DC4000286DFD /* Screen Shot 2020-06-10 at 2.15.32 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = CFA7C2522490DC4000286DFD /* Screen Shot 2020-06-10 at 2.15.32 AM.png */; };
+		CFF8A1172472E6C5001B33B2 /* editProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8A1162472E6C5001B33B2 /* editProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +31,6 @@
 		C8A3F4CF380C1AF08C148939 /* Pods-Metropolis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metropolis.debug.xcconfig"; path = "Target Support Files/Pods-Metropolis/Pods-Metropolis.debug.xcconfig"; sourceTree = "<group>"; };
 		CF2AF0AE2465FF1400E5D378 /* landingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingPageViewController.swift; sourceTree = "<group>"; };
 		CF2AF0B224660E6100E5D378 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
-		CF2AF0B424660E7000E5D378 /* messagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messagesViewController.swift; sourceTree = "<group>"; };
-		CF2AF0B624660E7B00E5D378 /* feedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
-		CF2AF0B824660E8700E5D378 /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
 		CF89332E244D0189002A2D06 /* Metropolis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metropolis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF893331244D0189002A2D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF893333244D0189002A2D06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +41,11 @@
 		CF893346244D0B1B002A2D06 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		CF893349244D0D5C002A2D06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF978EF9244D10B00023383A /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		CF9E4CAD2491B9D0002BA96F /* Screen Shot 2020-06-10 at 6.00.14 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-06-10 at 6.00.14 PM.png"; sourceTree = "<group>"; };
+		CFA21FE824A15CA40082E82E /* feedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedTableViewController.swift; sourceTree = "<group>"; };
+		CFA21FEA24A15E2A0082E82E /* eventManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventManagerViewController.swift; sourceTree = "<group>"; };
+		CFA7C2522490DC4000286DFD /* Screen Shot 2020-06-10 at 2.15.32 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-06-10 at 2.15.32 AM.png"; sourceTree = "<group>"; };
+		CFF8A1162472E6C5001B33B2 /* editProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				CF89333A244D0190002A2D06 /* Assets.xcassets */,
 				CF89333C244D0191002A2D06 /* LaunchScreen.storyboard */,
 				CF89333F244D0191002A2D06 /* Info.plist */,
+				CFA7C2522490DC4000286DFD /* Screen Shot 2020-06-10 at 2.15.32 AM.png */,
+				CF9E4CAD2491B9D0002BA96F /* Screen Shot 2020-06-10 at 6.00.14 PM.png */,
 				CF893349244D0D5C002A2D06 /* GoogleService-Info.plist */,
 			);
 			path = Metropolis;
@@ -113,9 +119,9 @@
 				CF978EF9244D10B00023383A /* registerViewController.swift */,
 				CF2AF0AE2465FF1400E5D378 /* landingPageViewController.swift */,
 				CF2AF0B224660E6100E5D378 /* profileViewController.swift */,
-				CF2AF0B424660E7000E5D378 /* messagesViewController.swift */,
-				CF2AF0B624660E7B00E5D378 /* feedViewController.swift */,
-				CF2AF0B824660E8700E5D378 /* eventsViewController.swift */,
+				CFF8A1162472E6C5001B33B2 /* editProfileViewController.swift */,
+				CFA21FE824A15CA40082E82E /* feedTableViewController.swift */,
+				CFA21FEA24A15E2A0082E82E /* eventManagerViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 				CF89334A244D0D5C002A2D06 /* GoogleService-Info.plist in Resources */,
 				CF89333B244D0190002A2D06 /* Assets.xcassets in Resources */,
 				CF893339244D0189002A2D06 /* Main.storyboard in Resources */,
+				CFA7C2532490DC4000286DFD /* Screen Shot 2020-06-10 at 2.15.32 AM.png in Resources */,
+				CF9E4CAE2491B9D0002BA96F /* Screen Shot 2020-06-10 at 6.00.14 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF2AF0B524660E7000E5D378 /* messagesViewController.swift in Sources */,
-				CF2AF0B924660E8700E5D378 /* eventsViewController.swift in Sources */,
 				CF893332244D0189002A2D06 /* AppDelegate.swift in Sources */,
 				CF893334244D0189002A2D06 /* SceneDelegate.swift in Sources */,
 				CF2AF0B324660E6100E5D378 /* profileViewController.swift in Sources */,
+				CFA21FEB24A15E2A0082E82E /* eventManagerViewController.swift in Sources */,
+				CFA21FE924A15CA40082E82E /* feedTableViewController.swift in Sources */,
 				CF893347244D0B1B002A2D06 /* loginViewController.swift in Sources */,
+				CFF8A1172472E6C5001B33B2 /* editProfileViewController.swift in Sources */,
 				CF2AF0AF2465FF1400E5D378 /* landingPageViewController.swift in Sources */,
-				CF2AF0B724660E7B00E5D378 /* feedViewController.swift in Sources */,
 				CF978EFA244D10B00023383A /* registerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,8 +397,9 @@
 			baseConfigurationReference = C8A3F4CF380C1AF08C148939 /* Pods-Metropolis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K4AFMRW4S4;
 				INFOPLIST_FILE = Metropolis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,6 +407,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nikdevadoss.Metropolis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,8 +418,9 @@
 			baseConfigurationReference = 6BE4B9636BD960ECE9B0D0E8 /* Pods-Metropolis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K4AFMRW4S4;
 				INFOPLIST_FILE = Metropolis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,6 +428,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nikdevadoss.Metropolis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
